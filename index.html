@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIKALTO HOTELS & RESORTS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav
+      class="navbar max-container navbar-expand-lg navbar-light d-flex justify-content-between justify-content-md-around align-items-center p-2 position-relative"
+    >
+      <div class="fw-semi-bold fs-3 logo">
+        <a href="#" class="nav-link"> MIKALTO </a>
+      </div>
+      <!-- mobile view starts -->
+      <div class="d-block d-sm-none" id="menu">
+        <img src="./image/menu-bar.svg" alt="" class="" style="width: 2rem" />
+      </div>
+      <ul
+        class="hide list-unstyled position-absolute top-100 bg-white w-100 justify-content-around align-items-center d-flex d-sm-none py-5 flex-column"
+        id="nav_list"
+      >
+        <li class="mb-3"><a class="nav-link hover_effect" href="#">Home</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Our Rooms</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Page</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Features</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Blog</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Contact</a></li>
+        <li class="mb-3">
+          <div class="d-none d-sm-flex">
+            <select name="" id="" class="border-0">
+              <option value="" class="">EN</option>
+            </select>
+            <img src="./image/shooping-bag.svg" alt="" style="width: 30px" />
+          </div>
+        </li>
+      </ul>
+      <!-- mobile view ends -->
+      <!-- desktop view starts -->
+      <ul
+        class="d-none list-unstyled justify-content-around align-items-center w-50 d-sm-flex mb-0"
+      >
+        <li class="mb-3"><a class="nav-link hover_effect" href="#">Home</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Our Rooms</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Page</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Features</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Blog</a></li>
+        <li class="mb-3"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+      <div class="d-none d-sm-flex">
+        <select name="" id="" class="border-0">
+          <option value="" class="">EN</option>
+        </select>
+        <img src="./image/shooping-bag.svg" alt="" style="width: 30px" />
+      </div>
+      <!-- desktop view ends -->
+    </nav>
+    <div class="hotel relative d-flex flex-column flex-md-row justify-content-around align-items-center mt-0 mt-md-20">
+      <div class="text w-50 w-md-100">
+        <h1 class="text-white fw-light ">Enjoy your dream vacation</h1>
+        <p class="text-white py-3">Quiet and endlessly beautiful hideaway</p>
+        <div class="d-flex ">
+          <button class="btn bg-white rounded-0 px-5">About Us</button>
+          <p class="text-white mt-3 ms-5">View Homestay →</p>
+        </div>
+      </div>
+      <form
+        action=""
+        class="bg-white w-25 d-flex flex-column py-5 px-3 form px-10 w-25 "
+      >
+        <p class="fs-3">Search Room</p>
+        <p class="mb-3">Get the latest on our COVID-19 response</p>
+        <div class="d-flex justify-content-between">
+          <div class="">
+            <div class="d-flex">
+              <img
+                src="./image/calendar.svg"
+                alt=""
+                style="width: 1.5rem"
+                class="mb-3 pe-2"
+              />
+              <p class="text-primary">Checkin*</p>
+            </div>
+            <input
+              type="text"
+              class="border-0"
+              placeholder="check-in Date"
+              style="width: 8rem"
+            />
+            <hr />
+          </div>
+          <div>
+            <div class="d-flex">
+              <img
+                src="./calendar.svg"
+                alt=""
+                style="width: 1.5rem"
+                class="mb-3 pe-2"
+              />
+              <p class="text-primary">Checkout*</p>
+            </div>
+            <input
+              type="text"
+              class="border-0"
+              placeholder="check-out Date"
+              style="width: 8rem"
+            />
+            <hr />
+          </div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-start ps-2">
+          <img src="./image/user.svg" alt="" style="width: 1.2rem" class="pb-3" />
+          <p class="px-2">Adults</p>
+        </div>
+        <select name="" id="" class="form-select border-0 pt-0">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <hr />
+        <div class="d-flex align-items-center justify-content-start ps-2">
+          <img src="./image/child.svg" alt="" style="width: 1.2rem" class="pb-3" />
+          <p class="px-2">Children</p>
+        </div>
+
+        <select name="" id="" class="form-select border-0 pt-0">
+          <option value="" class="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+        </select>
+        <hr />
+
+        <button class="btn bg-primary text-white mt-4 rounded-0">
+          Check Availability
+        </button>
+      </form>
+    </div>
+
+    <section class="d-flex w-100 p-5">
+      <div class="w-25">
+        <p>WELCOME TO</p>
+        <h4>The Milkanto Luxury & Comfort Homestay</h4>
+        <p>
+          Welcome to our 5-star hotel inPuerto De la Cruz's old town. Lorem,
+          ipsum dolor sit amet consectetur adipisicing elit. Ipsum explicabo
+          nihil maxime temporibus officia provident.
+        </p>
+        <img src="./sign.png" alt="" />
+        <p>MELINDA AMANDA - HOTEL MANAGER</p>
+      </div>
+      <div class="relative w-75">
+        <img src="./image/hotel1.png" alt="" class="w-25 hotel1" />
+        <img src="./image/hotel2.png" alt="" class="w-25 hotel2" />
+        <img src="./image/hotel3.png" alt="" class="w-25 hotel3" />
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
