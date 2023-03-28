@@ -2,8 +2,6 @@
   display: none;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Varela+Round&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,700&display=swap");
-
 * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -15,7 +13,20 @@
   margin-left: 2.8rem;
   margin-right: 2.8rem;
   background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+
+.image-width {
+  width: 30px;
+}
+
+.image-height {
+  height: 50vh;
+}
+
+.text-color {
+  color: #0a205c;
 }
 
 .hotel1 {
@@ -55,6 +66,7 @@
 
 .discover {
   background: url(../image/swimming.jpeg);
+  background-repeat: no-repeat;
   height: 60vh;
 }
 
@@ -62,13 +74,43 @@
   background-color: #0a205c !important;
 }
 
-.button:hover{
+.bg-color-wheat {
+  background-color: rgb(244, 235, 224);
+}
+
+.bg-color-owl {
+  background-color: rgb(21, 233, 74);
+  width: 2rem;
+}
+
+.member-width {
+  width: 3rem;
+}
+
+.card-height {
+  height: 35vh;
+}
+
+.bigger-card-height {
+  height: 72vh;
+}
+
+.spacing-above {
+  margin-top: -36px;
+}
+
+.bg-color-rating {
+  background-color: rgb(8, 90, 28);
+  width: 1px;
+}
+
+.button:hover {
   color: #0a205c !important;
   background-color: white !important;
   border: 2px solid #0a205c !important;
 }
 
-.white-button:hover{
+.white-button:hover {
   background-color: #0a205c !important;
   color: white !important;
 }
@@ -76,7 +118,6 @@
 .width {
   width: 100%;
 }
-
 
 @media screen and (min-width: 900px) {
   .width {
