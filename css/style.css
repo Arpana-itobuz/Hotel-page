@@ -119,7 +119,12 @@
   width: 100%;
 }
 
-@media screen and (min-width: 900px) {
+.on-hover:hover {
+  color: aliceblue;
+  text-decoration: underline !important;
+}
+
+@media screen and (min-width: 767px) {
   .width {
     width: 35% !important;
     margin-right: 10rem;
