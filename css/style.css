@@ -1,19 +1,22 @@
-.hidden {
-  display: none;
-}
-
 * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.hotel {
-  background: url(../image/bg.png);
+body {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.top-section {
   height: 90vh;
   margin-left: 2.8rem;
   margin-right: 2.8rem;
   background-position: center;
-  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -124,7 +127,16 @@
   text-decoration: underline !important;
 }
 
-@media screen and (min-width: 767px) {
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "" !important;
+}
+
+:root {
+  --swiper-theme-color: white !important;
+}
+
+@media screen and (min-width: 900px) {
   .width {
     width: 35% !important;
     margin-right: 10rem;

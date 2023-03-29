@@ -13,11 +13,18 @@
       crossorigin="anonymous"
     />
     <link rel="icon" href="./image/favicon.svg" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
 
   <body>
-
     <!-- nav-bar start -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid px-5">
@@ -75,11 +82,11 @@
 
     <!-- top-section start -->
     <section
-      class="hotel d-flex flex-column flex-md-row justify-content-around align-items-center mt-0 mt-md-20"
+      class="top-section d-flex flex-column flex-lg-row justify-content-around align-items-center mt-0 mt-lg-20"
     >
-      <div class="text d-md-block d-none px-5">
-        <h1 class="text-white fw-light">Enjoy your dream vacation</h1>
-        <p class="text-white py-3">Quiet and endlessly beautiful hideaway</p>
+      <div class="text d-lg-block d-none px-5">
+        <h1 class="text-white fw-light top-section-heading"></h1>
+        <p class="text-white py-3 top-section-description"></p>
         <div class="d-flex">
           <button class="btn bg-white rounded-0 px-5 white-button">
             About Us
@@ -87,7 +94,9 @@
           <a href="#" class="nav-link text-white mt-3 ms-5">View Homestay →</a>
         </div>
       </div>
-      <form class="bg-white d-flex flex-column py-5 px-3 width my-md-0 my-5">
+      <form
+        class="card bg-white d-flex flex-column py-5 px-3 width my-lg-0 my-5"
+      >
         <p class="fs-3">Search Room</p>
         <p class="mb-3">Get the latest on our COVID-19 response</p>
         <div class="d-flex justify-content-between flex-column flex-xl-row">
@@ -96,7 +105,7 @@
               <img
                 src="./image/calendar.svg"
                 alt="calendar"
-                class="mb-3 pe-2 image-width"
+                class="mb-3 pe-2 image-width img-fluid"
               />
               <p class="text-color">
                 Checkin<span class="text-danger">*</span>
@@ -115,7 +124,7 @@
               <img
                 src="./image/calendar.svg"
                 alt="calendar"
-                class="mb-3 pe-2 image-width"
+                class="mb-3 pe-2 image-width img-fluid"
               />
               <p class="text-color">
                 Checkout<span class="text-danger">*</span>
@@ -132,7 +141,11 @@
         </div>
 
         <div class="d-flex align-items-center justify-content-start ps-2">
-          <img src="./image/user.svg" alt="adults" class="image-width pb-3" />
+          <img
+            src="./image/user.svg"
+            alt="adults"
+            class="image-width pb-3 img-fluid"
+          />
           <p class="px-2">Adults</p>
         </div>
         <select class="form-select border-0 pt-0">
@@ -142,7 +155,11 @@
         </select>
         <hr />
         <div class="d-flex align-items-center justify-content-start ps-2">
-          <img src="./image/child.svg" alt="child" class="image-width pb-3" />
+          <img
+            src="./image/child.svg"
+            alt="child"
+            class="image-width pb-3 img-fluid"
+          />
           <p class="px-2">Children</p>
         </div>
 
@@ -163,9 +180,9 @@
     <!-- top-section end -->
 
     <!-- overview-section start -->
-    <section class="container my-5 text-center text-md-start">
-      <div class="row relative mb-5 d-flex flex-md-row flex-column">
-        <div class="col-md-4 offset-md-1">
+    <section class="container my-5 text-center text-lg-start">
+      <div class="row relative mb-5 d-flex flex-lg-row flex-column">
+        <div class="col-lg-4 offset-lg-1">
           <p>WELCOME TO</p>
           <h3>The Mikalto Luxury & Comfort Homestay</h3>
           <p>
@@ -176,7 +193,7 @@
           <img src="./image/sign.png" alt="signature" />
           <p>MELINDA AMANDA - HOTEL MANAGER</p>
         </div>
-        <div class="col-md-5 offset-md-1 d-sm-block d-none">
+        <div class="col-lg-5 offset-lg-1 d-md-block d-none">
           <img src="./image/hotel1.png" alt="hotel" class="w-25 hotel1" />
           <img src="./image/hotel2.png" alt="hotel" class="w-25 hotel2" />
           <img src="./image/hotel3.png" alt="hotel" class="w-25 hotel3" />
@@ -186,124 +203,69 @@
     <!-- overview-section end -->
 
     <!-- swipper-section start -->
-    <swiper-container class="mySwiper mt-5 pt-5" navigation="true">
-      <swiper-slide>
-        <div class="row d-flex flex-md-row flex-column p-0">
-          <div class="col-md-6 bg-color text-white p-5">
-            <p class="text-warning">ELEGANCE AND COMFORT</p>
-            <h5>Standard Room</h5>
-            <p>From: <span class="fw-bold fs-4">$150</span>/night</p>
-            <p>
-              With wide and comfortable areas and daylight pouring in from the..
-            </p>
-            <div class="d-flex justify-content-start">
-              <ul class="list-unstyled">
-                <li class="me-5">Bed:</li>
-                <li class="me-5">Capacity:</li>
-                <li class="me-5">Room size:</li>
-                <li class="me-5">View:</li>
-              </ul>
-              <ul class="list-unstyled">
-                <li class="ms-md-5">Queen Size Bed</li>
-                <li class="ms-md-5">2 adults, 1 children</li>
-                <li class="ms-md-5">55 sqm</li>
-                <li class="ms-md-5">garden view</li>
-              </ul>
-            </div>
-            <button
-              class="bg-color button border-2 border-white text-white border-white px-4 p-2"
-            >
-              View Detail
-            </button>
+    <section
+      class="row d-flex flex-lg-row flex-column-reverse align-items-center justify-content-center bg-color"
+    >
+      <div class="p-5 text-white col-lg-6">
+        <p class="text-warning swiper-sub-heading"></p>
+        <h5 class="swiper-heading"></h5>
+        <p>From: <span class="fw-bold fs-4 swiper-rate">$150</span>/night</p>
+        <p class="swiper-description"></p>
+        <div class="d-flex">
+          <ul class="list-unstyled">
+            <li class="me-5 fw-bold">Bed:</li>
+            <li class="me-5 fw-bold">Capacity:</li>
+            <li class="me-5 fw-bold">Room size:</li>
+            <li class="me-5 fw-bold">View:</li>
+          </ul>
+          <ul class="list-unstyled">
+            <li class="ms-lg-5 swiper-bed">Queen Size Bed</li>
+            <li class="ms-lg-5 swiper-capacity">2 adults, 1 children</li>
+            <li class="ms-lg-5 swiper-room-size">55 sqm</li>
+            <li class="ms-lg-5 swiper-view">garden view</li>
+          </ul>
+        </div>
+        <button
+          class="bg-color button border-2 border-white text-white border-white px-4 p-2"
+        >
+          View Detail
+        </button>
+      </div>
+
+      <div class="mySwiper swiper p-0 m-0 col-lg-6 h-100">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img alt="hotel" class="w-100 h-100 swiper-image" />
           </div>
-          <div class="col-md-6 p-0">
-            <img src="./image/hotel1.png" alt="hotel" class="w-100" />
+          <div class="swiper-slide">
+            <img alt="hotel" class="w-100 h-100 swiper-image" />
+          </div>
+          <div class="swiper-slide">
+            <img alt="hotel" class="w-100 h-100 swiper-image" />
           </div>
         </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="row d-flex flex-md-row flex-column p-0">
-          <div class="col-md-6 bg-color text-white p-5">
-            <p class="text-warning">ELEGANCE AND COMFORT</p>
-            <h5>Deluxe Room</h5>
-            <p>From: <span class="fw-bold fs-4">$200</span>/night</p>
-            <p>
-              With wide and comfortable areas and daylight pouring in from the..
-            </p>
-            <div class="d-flex justify-content-start">
-              <ul class="list-unstyled">
-                <li class="me-5">Bed:</li>
-                <li class="me-5">Capacity:</li>
-                <li class="me-5">Room size:</li>
-                <li class="me-5">View:</li>
-              </ul>
-              <ul class="list-unstyled">
-                <li class="ms-md-5">Queen Size Bed</li>
-                <li class="ms-md-5">2 adults, 1 children</li>
-                <li class="ms-md-5">60 sqm</li>
-                <li class="ms-md-5">pool view</li>
-              </ul>
-            </div>
-            <button
-              class="bg-color button border-2 border-white text-white border-white px-4 p-2"
-            >
-              View Detail
-            </button>
-          </div>
-          <div class="col-md-6 p-0">
-            <img src="./image/hotel2.png" alt="hotel" class="w-100" />
-          </div>
+        <div class="swiper-button-next">
+          <i class="fs-2 fas fa-light fa-circle-chevron-right"></i>
         </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="row d-flex flex-md-row flex-column p-0">
-          <div class="col-md-6 bg-color text-white p-5">
-            <p class="text-warning">ELEGANCE AND COMFORT</p>
-            <h5>Suite</h5>
-            <p>From: <span class="fw-bold fs-4">$300</span>/night</p>
-            <p>
-              With wide and comfortable areas and daylight pouring in from the..
-            </p>
-            <div class="d-flex justify-content-start">
-              <ul class="list-unstyled">
-                <li class="me-5">Bed:</li>
-                <li class="me-5">Capacity:</li>
-                <li class="me-5">Room size:</li>
-                <li class="me-5">View:</li>
-              </ul>
-              <ul class="list-unstyled">
-                <li class="ms-md-5">Queen Size Bed</li>
-                <li class="ms-md-5">2 adults</li>
-                <li class="ms-md-5">70 sqm</li>
-                <li class="ms-md-5">garden & pool view</li>
-              </ul>
-            </div>
-            <button
-              class="bg-color button border-2 border-white text-white border-white px-4 p-2"
-            >
-              View Detail
-            </button>
-          </div>
-          <div class="col-md-6 p-0">
-            <img src="./image/hotel3.png" alt="hotel" class="w-100" />
-          </div>
+        <div class="swiper-button-prev">
+          <i class="fs-2 fas fa-light fa-circle-chevron-left"></i>
         </div>
-      </swiper-slide>
-    </swiper-container>
+      </div>
+    </section>
     <!-- swipper-section end -->
 
     <!-- hotel-feature-section start -->
     <section class="container-fluid mt-5">
       <div class="row mb-3">
         <h2
-          class="col-md-5 offset-md-1 fs-2 fw-light ps-md-4 text-center text-md-start mb-3"
+          class="col-lg-5 offset-lg-1 fs-2 fw-light ps-lg-4 text-center text-lg-start mb-3"
         >
           Why choose our hotel?
         </h2>
       </div>
-      <div class="row d-flex flex-md-row flex-column">
+      <div class="row d-flex flex-lg-row flex-column">
         <div
-          class="col-md-3 offset-md-1 d-flex align-items-md-start align-items-center flex-column flex-md-row text-center text-md-start"
+          class="col-lg-3 offset-lg-1 d-flex align-items-lg-start align-items-center flex-column flex-lg-row text-center text-lg-start"
         >
           <img src="./image/restaurant/dish.svg" alt="cuisine" class="mx-2" />
           <div>
@@ -316,7 +278,7 @@
           </div>
         </div>
         <div
-          class="col-md-3 d-flex align-items-md-start align-items-center flex-column flex-md-row text-center text-md-start"
+          class="col-lg-3 d-flex align-items-lg-start align-items-center flex-column flex-lg-row text-center text-lg-start"
         >
           <img src="./image/restaurant/yoga.svg" alt="yoga" class="p-2 mx-2" />
           <div>
@@ -328,7 +290,7 @@
           </div>
         </div>
         <div
-          class="col-md-3 d-flex align-items-md-start align-items-center flex-column flex-md-row text-center text-md-start"
+          class="col-lg-3 d-flex align-items-lg-start align-items-center flex-column flex-lg-row text-center text-lg-start"
         >
           <img src="./image/restaurant/location.svg" alt="location" />
           <div>
@@ -347,9 +309,9 @@
     <!-- hotel-overview-section start -->
     <section class="container-fluid mt-5">
       <div
-        class="row d-flex flex-md-row flex-column-reverse text-center text-md-start"
+        class="row d-flex flex-lg-row flex-column-reverse text-center text-lg-start"
       >
-        <div class="col-md-6 bg-color text-white p-5 m-0">
+        <div class="col-lg-6 bg-color text-white p-5 m-0">
           <p class="text-warning">OTHER ACTIVITIES</p>
           <h3 class="mb-5">Give yourself a smile- Smile & Wellness</h3>
           <p class="mb-5">
@@ -362,16 +324,16 @@
           </p>
           <a href="#" class="nav-link">Explore More →</a>
         </div>
-        <div class="col-md-6 p-0 m-0">
+        <div class="col-lg-6 p-0 m-0">
           <img src="./image/hotel2.png" alt="hotel" class="w-100" />
         </div>
       </div>
-      <div class="row d-flex flex-md-row flex-column">
-        <div class="col-md-6 p-0 m-0">
+      <div class="row d-flex flex-lg-row flex-column">
+        <div class="col-lg-6 p-0 m-0">
           <img src="./image/hotel3.png" alt="hotel" class="w-100" />
         </div>
         <div
-          class="col-md-6 p-5 m-0 bg-color text-white text-center text-md-start"
+          class="col-lg-6 p-5 m-0 bg-color text-white text-center text-lg-start"
         >
           <p class="text-warning">RECONNECT WITH NATURE</p>
           <h3 class="mb-4">Experience a truly unforgettable holiday</h3>
@@ -407,75 +369,58 @@
           </h3>
         </div>
       </div>
-      <div class="row d-flex flex-md-row flex-column">
-        <div class="col-md-3 text-center text-md-start">
+      <div class="row d-flex flex-lg-row flex-column px-3">
+        <div class="col-lg-3 text-center text-lg-start">
           <img
-            src="./image/services/card-1.jpg"
             alt="services"
-            class="w-100 mb-3 image-height"
+            class="w-100 mb-3 image-height services-image img-fluid"
           />
-          <p>WELLNESS</p>
-          <h4>Dedicated to wellness</h4>
-          <p>
-            Aman's approach to wellness is focused on personalisation, privacy
-            and seclusion. Local spa rituals with indigenous ingredients, offer
-            a profoundly therapeutic touch, and a gentle sense of discovery.
-          </p>
+          <p class="services-sub-heading"></p>
+          <h4 class="services-heading"></h4>
+          <p class="services-description"></p>
           <a href="#" class="text-black text-decoration-none"
             >Discover more →</a
           >
         </div>
-        <div class="col-md-3 text-center text-md-start">
+        <div class="col-lg-3 text-center text-lg-start">
           <img
-            src="./image/services/card2.jpg"
             alt="services"
-            class="w-100 mb-3 image-height"
+            class="w-100 mb-3 image-height services-image img-fluid"
           />
-          <p>GIFT CARDS</p>
-          <h4>The gift of future travel</h4>
-          <p>
-            Share extraordinary experiences with the Aman E- Gift Card -
-            delivered instantly and offering memories that last a lifetime.
-          </p>
+          <p class="services-sub-heading"></p>
+          <h4 class="services-heading"></h4>
+          <p class="services-description"></p>
           <a href="#" class="text-black text-decoration-none"
             >Discover more →</a
           >
         </div>
-        <div class="col-md-3 text-center text-md-start">
+        <div class="col-lg-3 text-center text-lg-start">
           <img
-            src="./image/services/card4.jpg"
             alt="services"
-            class="w-100 mb-3 image-height"
+            class="w-100 mb-3 image-height services-image img-fluid"
           />
-          <p>MIKALTO SHOP</p>
-          <h4>The spa experience from home</h4>
-          <p>
-            Skincare and Spa supplements harness powerful natural ingredients to
-            provide balance and optimal wellbeing.
-          </p>
+          <p class="services-sub-heading"></p>
+          <h4 class="services-heading"></h4>
+          <p class="services-description"></p>
           <a href="#" class="text-black text-decoration-none"
             >Discover more →</a
           >
         </div>
-        <div class="col-md-3 text-center text-md-start">
+        <div class="col-lg-3 text-center text-lg-start">
           <img
-            src="./image/services/card3.jpg"
             alt="services"
-            class="w-100 mb-3 image-height"
+            class="w-100 mb-3 image-height services-image img-fluid"
           />
-          <p>EXPERIENCE</p>
-          <h4>Adventures in the Wild</h4>
-          <p>
-            Skincare and Spa supplements harness powerful natural ingredients to
-            provide balance and optimal wellbeing.
-          </p>
+          <p class="services-sub-heading"></p>
+          <h4 class="services-heading"></h4>
+          <p class="services-description"></p>
           <a href="#" class="text-black text-decoration-none"
             >Discover more →</a
           >
         </div>
       </div>
 
-      <button class="col-md-2 offset-md-5 bg-white offset-3 white-button">
+      <button class="col-lg-2 offset-lg-5 bg-white offset-3 white-button">
         View all Services
       </button>
     </section>
@@ -500,11 +445,11 @@
     <!-- hotel-review-section start -->
     <section class="container-fluid py-5 bg-color-wheat">
       <div
-        class="row gap-5 d-flex flex-md-row flex-column text-center text-md-start"
+        class="row gap-5 d-flex flex-lg-row flex-column text-center text-lg-start"
       >
-        <div class="col-md-3 offset-md-1">
+        <div class="col-lg-3 offset-lg-1">
           <div
-            class="d-flex align-items-center justify-content-center justify-content-md-start"
+            class="d-flex align-items-center justify-content-center justify-content-lg-start"
           >
             <div class="d-flex align-items-center">
               <img src="./image/member1.png" alt="member" style="width: 3rem" />
@@ -520,7 +465,7 @@
             />
           </div>
           <div
-            class="d-flex mb-2 justify-content-center justify-content-md-start"
+            class="d-flex mb-2 justify-content-center justify-content-lg-start"
           >
             <div class="rounded-circle p-2 me-1 bg-color-rating"></div>
             <div class="rounded-circle p-2 me-1 bg-color-rating"></div>
@@ -535,9 +480,9 @@
             includes use of the Spa, wonderful, it has a...
           </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <div
-            class="d-flex align-items-center justify-content-center justify-content-md-start"
+            class="d-flex align-items-center justify-content-center justify-content-lg-start"
           >
             <div class="d-flex align-items-center">
               <img
@@ -557,7 +502,7 @@
             />
           </div>
           <div
-            class="d-flex mb-2 justify-content-center justify-content-md-start"
+            class="d-flex mb-2 justify-content-center justify-content-lg-start"
           >
             <div class="rounded-circle p-2 me-1 bg-color-rating"></div>
             <div class="rounded-circle p-2 me-1 bg-color-rating"></div>
@@ -572,9 +517,9 @@
             warmth, you are fantastic.
           </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <div
-            class="d-flex align-items-center justify-content-center justify-content-md-start"
+            class="d-flex align-items-center justify-content-center justify-content-lg-start"
           >
             <div class="d-flex align-items-center">
               <img
@@ -594,7 +539,7 @@
             />
           </div>
           <div
-            class="d-flex mb-2 justify-content-center justify-content-md-start"
+            class="d-flex mb-2 justify-content-center justify-content-lg-start"
           >
             <div class="rounded-circle p-2 me-1 bg-color-rating"></div>
             <div class="rounded-circle p-2 me-1 bg-color-rating"></div>
@@ -615,8 +560,8 @@
 
     <!-- hotel-location-section start -->
     <section class="container-fluid mt-5 gap-5 mb-5">
-      <div class="row d-flex flex-md-row flex-column text-center text-md-start">
-        <div class="col-md-4 offset-md-2">
+      <div class="row d-flex flex-lg-row flex-column text-center text-lg-start">
+        <div class="col-lg-4 offset-lg-2">
           <img src="./image/flower.svg" alt="flower" />
           <p>GETTING THERE</p>
           <h3>How to get there?</h3>
@@ -626,7 +571,7 @@
             accumsan sollicitudin vehicula
           </p>
           <div
-            class="d-flex align-items-md-start align-items-center flex-column flex-md-row"
+            class="d-flex align-items-lg-start align-items-center flex-column flex-lg-row"
           >
             <img src="./image/aeroplane.svg" alt="plane" />
             <div class="ps-3">
@@ -638,7 +583,7 @@
             </div>
           </div>
           <div
-            class="d-flex align-items-md-start align-items-center flex-column flex-md-row"
+            class="d-flex align-items-lg-start align-items-center flex-column flex-lg-row"
           >
             <img src="./image/bus.svg" alt="bus" />
             <div class="ps-3">
@@ -650,7 +595,7 @@
             </div>
           </div>
           <div
-            class="d-flex align-items-md-start align-items-center flex-column flex-md-row"
+            class="d-flex align-items-lg-start align-items-center flex-column flex-lg-row"
           >
             <img src="./image/van.svg " alt="van" />
             <div class="ps-3">
@@ -663,7 +608,7 @@
           </div>
           <a href="#" class="nav-link mt-3 mb-5">Discover more →</a>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.043901925614!2d88.42922191483042!3d22.57746128518028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275a5466e0099%3A0x563fb49fb6394261!2sItobuz%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1679903772371!5m2!1sen!2sin"
             height="600"
@@ -680,14 +625,14 @@
     <!-- hotel-extra-features-section start -->
     <section class="container-fluid mt-5">
       <div class="row pb-5 bg-color-wheat">
-        <div class="col-md-4 m-0 p-0">
+        <div class="col-lg-4 m-0 p-0">
           <img
             src="./image/join-us/with-nature-3.jpg"
             alt="hotel"
             class="w-100 bigger-card-height spacing-above"
           />
         </div>
-        <div class="col-md-3">
+        <div class="col-lg-3">
           <img
             src="./image/join-us/with-nature-1.jpg"
             alt="hotel"
@@ -700,7 +645,7 @@
           />
         </div>
         <div
-          class="col-md-3 offset-md-1 d-flex flex-column align-items-center justify-content-center mt-md-0 mt-5"
+          class="col-lg-3 offset-lg-1 d-flex flex-column align-items-center justify-content-center mt-lg-0 mt-5"
         >
           <p>SPA & WELLNESS</p>
           <h4>Side by Side with Nature</h4>
@@ -748,13 +693,17 @@
     <!-- footer-section start -->
     <footer class="text-white pt-5">
       <div>
-        <img src="./image/footer/footer-design.png" alt="footer-image" class="w-100" />
+        <img
+          src="./image/footer/footer-design.png"
+          alt="footer-image"
+          class="w-100"
+        />
       </div>
       <div class="bg-color pt-5">
         <div
-          class="d-flex flex-column flex-md-row justify-content-md-around mx-5 px-md-5"
+          class="d-flex flex-column flex-lg-row justify-content-lg-around mx-5 px-lg-5"
         >
-          <div class="d-flex flex-column width text-center text-md-start">
+          <div class="d-flex flex-column width text-center text-lg-start">
             <div class="d-flex flex-column">
               <h4>MIKALTO</h4>
               <p>HOTELS & RESORTS</p>
@@ -763,10 +712,10 @@
               Duis vitae nulla at nisl finibus pharetra.Nunc porttitor sapirn
               quis euismod sodales.Nullam in ipsum nibh.
             </p>
-            <div class="d-flex align-items-center flex-column flex-md-row">
+            <div class="d-flex align-items-center flex-column flex-lg-row">
               <p class="">Follow us:</p>
               <div
-                class="d-flex align-items-center w-25 mb-3 ms-md-3 justify-content-center justify-content-md-around"
+                class="d-flex align-items-center w-25 mb-3 ms-lg-3 justify-content-center justify-content-lg-around"
               >
                 <a href="https://www.facebook.com/" target="_blank">
                   <img
@@ -807,7 +756,7 @@
             </div>
           </div>
 
-          <div class="text-center text-md-start">
+          <div class="text-center text-lg-start">
             <p class="fw-semibold">About</p>
             <ul class="list-unstyled">
               <li>
@@ -827,7 +776,7 @@
               </li>
             </ul>
           </div>
-          <div class="text-center text-md-start">
+          <div class="text-center text-lg-start">
             <p class="fw-semibold">Services</p>
             <ul class="list-unstyled">
               <li><a href="#" class="text-decoration-none on-hover">Spa</a></li>
@@ -845,7 +794,7 @@
               </li>
             </ul>
           </div>
-          <div class="text-center text-md-start">
+          <div class="text-center text-lg-start">
             <p class="fw-semibold">Quick Links</p>
             <ul class="list-unstyled">
               <li>
@@ -873,7 +822,7 @@
               </li>
             </ul>
           </div>
-          <div class="text-center text-md-start">
+          <div class="text-center text-lg-start">
             <p class="fw-semibold">Contact Us</p>
             <div>
               <p>
@@ -895,12 +844,12 @@
         </div>
         <hr class="mx-5" />
         <div
-          class="d-flex justify-content-between flex-column-reverse flex-md-row align-items-center"
+          class="d-flex justify-content-between flex-column-reverse flex-lg-row align-items-center"
         >
           <div
-            class="d-flex justify-content-between ps-md-5 ms-md-5 align-items-center flex-column-reverse flex-md-row"
+            class="d-flex justify-content-between ps-lg-5 ms-lg-5 align-items-center flex-column-reverse flex-lg-row"
           >
-            <p class="me-md-5 ps-md-4">Copyright @ 2022 Mikalto JWS.</p>
+            <p class="me-lg-5 ps-lg-4">Copyright @ 2022 Mikalto JWS.</p>
             <ul class="list-unstyled d-flex">
               <li class="pe-3">Privacy</li>
               <li class="pe-3">Terms</li>
@@ -923,6 +872,5 @@
     <!-- footer-section end -->
 
     <script src="./js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
   </body>
 </html>
