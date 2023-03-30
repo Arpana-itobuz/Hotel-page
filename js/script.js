@@ -14,10 +14,8 @@ submitButton.addEventListener("click", (e) => {
   console.log(checkOut.value);
   let selecetedIndex = dropdownList.selectedIndex;
   let selectedOptionAdult = dropdownList.options[selecetedIndex];
-  // console.log("Adult : " + selectedOption.text);
   let selecetedIndexChild = dropdownListChild.selectedIndex;
-  let selectedOptionChild = dropdownListChild.options[selecetedIndexChild];
-  // console.log("Children : " + selectedOptionChild.text);
+  let selectedOptionChild = dropdownListChild.options[selecetedIndexChild];``
   const formData = {
     checkIn: checkIn.value,
     checkOut: checkOut.value,

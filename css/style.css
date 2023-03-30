@@ -19,10 +19,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.navbar-collapse {
-  margin-left: 20rem !important;
-}
-
 .image-width {
   width: 30px;
 }
@@ -124,5 +120,4 @@ body {
     width: 30% !important;
     margin-right: 10rem;
   }
-  
 }
