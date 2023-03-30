@@ -19,6 +19,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.navbar-collapse {
+  margin-left: 20rem !important;
+}
+
 .image-width {
   width: 30px;
 }
