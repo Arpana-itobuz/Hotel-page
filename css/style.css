@@ -29,20 +29,20 @@ body {
 
 .hotel1 {
   position: absolute;
-  top: 5%;
-  right: 30%;
+  top: 3%;
+  right: 23%;
 }
 
 .hotel2 {
   position: absolute;
-  top: 15%;
-  right: 12%;
+  top: 12%;
+  right: 10%;
 }
 
 .hotel3 {
   position: absolute;
   top: 40%;
-  right: 25%;
+  right: 17%;
 }
 
 .relative {

@@ -13,11 +13,33 @@ submitButton.addEventListener("click", (e) => {
   console.log(checkIn.value);
   console.log(checkOut.value);
   let selecetedIndex = dropdownList.selectedIndex;
-  let selectedOption = dropdownList.options[selecetedIndex];
-  console.log("Adult : " + selectedOption.text);
+  let selectedOptionAdult = dropdownList.options[selecetedIndex];
+  // console.log("Adult : " + selectedOption.text);
   let selecetedIndexChild = dropdownListChild.selectedIndex;
   let selectedOptionChild = dropdownListChild.options[selecetedIndexChild];
-  console.log("Children : " + selectedOptionChild.text);
+  // console.log("Children : " + selectedOptionChild.text);
+  const formData = {
+    checkIn: checkIn.value,
+    checkOut: checkOut.value,
+    adult: selectedOptionAdult.text,
+    child: selectedOptionChild.text,
+  };
+
+  postForm(formData).then((data) => {
+    console.log(data);
+  });
+  async function postForm(formData) {
+    const res = await fetch("http://127.0.0.1:5000/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+      // body: formData,
+    });
+    return res.json();
+  }
+  
 });
 
 var swiper = new Swiper(".mySwiper", {
