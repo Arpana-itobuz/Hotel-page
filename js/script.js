@@ -35,11 +35,9 @@ submitButton.addEventListener("click", (e) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
-      // body: formData,
     });
     return res.json();
   }
-  
 });
 
 var swiper = new Swiper(".mySwiper", {
