@@ -26,115 +26,105 @@
 
   <body>
     <!-- nav-bar start -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid px-5">
-        <div>
-          <a class="navbar-brand fs-2" href="#">MIKALTO</a>
-          <p class="ps-3">HOTELS & RESORTS</p>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarScroll"
-          aria-controls="navbarScroll"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-5">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Our Rooms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Page</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Content</a>
-            </li>
-          </ul>
+    <nav class="px-5 d-flex align-items-center justify-content-between">
+      <div>
+        <a class="fs-2 nav-link" href="#">MIKALTO</a>
+        <p class="ps-3">HOTELS & RESORTS</p>
+      </div>
+      <button class="hidden"><i class="fas far fa-bars"></i></button>
 
-          <div class="d-none d-sm-flex">
-            <select class="border-0">
-              <option value="" class="">EN</option>
-            </select>
-            <img
-              src="./image/shooping-bag.svg"
-              alt="cart"
-              class="image-width"
-            />
-          </div>
-        </div>
+      <ul class="d-md-flex list-unstyled d-none">
+        <li class="pe-3">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="pe-3">
+          <a class="nav-link" href="#">Our Rooms</a>
+        </li>
+        <li class="pe-3">
+          <a class="nav-link" href="#">Page</a>
+        </li>
+        <li class="pe-3">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="pe-3">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="pe-3">
+          <a class="nav-link" href="#">Content</a>
+        </li>
+      </ul>
+
+      <div class="d-none d-md-flex">
+        <select class="border-0">
+          <option value="" class="">EN</option>
+        </select>
+        <img src="./image/shooping-bag.svg" alt="cart" class="image-width" />
       </div>
     </nav>
     <!-- nav-bar end -->
 
     <!-- top-section start -->
     <section
-      class="top-section d-flex flex-column flex-lg-row justify-content-around align-items-center mt-0 mt-lg-20"
+      class="top-section d-flex flex-column flex-md-row justify-content-around align-items-center pt-5 pb-0 pb-md-5"
     >
-      <div class="text d-lg-block d-none px-5">
-        <h1 class="text-white fw-light top-section-heading"></h1>
-        <p class="text-white py-3 top-section-description"></p>
-        <div class="d-flex">
-          <button class="btn bg-white rounded-0 px-5 white-button">
+      <div class="px-5 pt-md-0 text-center text-lg-start">
+        <h1 class="text-white pt-5 fw-light top-section-heading"></h1>
+        <p class="text-white pt-3 top-section-description"></p>
+        <div class="d-flex flex-column flex-lg-row align-items-center">
+          <a
+            href="#"
+            class="btn bg-transparent text-white rounded-0 px-md-5 px-2 top-section-hover"
+          >
             About Us
-          </button>
-          <a href="#" class="nav-link text-white mt-3 ms-5">View Homestay →</a>
+          </a>
+          <a
+            href="#"
+            class="nav-link text-white mt-3 bg-transparent p-2 ms-md-2 mb-3 top-section-hover"
+            >View Homestay →</a
+          >
         </div>
       </div>
       <form
-        class="card bg-white d-flex flex-column py-5 px-3 width my-lg-0 my-5"
+        class="bg-white d-flex flex-column py-3 px-3 width mt-5 mb-0 mb-md-5 me-md-5"
       >
         <p class="fs-3">Search Room</p>
         <p class="mb-3">Get the latest on our COVID-19 response</p>
         <div class="d-flex justify-content-between flex-column flex-xl-row">
-          <div class="">
+          <div class="form-group">
             <div class="d-flex">
               <img
                 src="./image/calendar.svg"
                 alt="calendar"
                 class="mb-3 pe-2 image-width img-fluid"
               />
-              <p class="text-color">
+              <label class="text-color">
                 Checkin<span class="text-danger">*</span>
-              </p>
+              </label>
             </div>
             <input
-              type="text"
-              class="border-0 bg-transparent"
+              type="date"
+              id="check-in"
+              class="border-0 bg-transparent form-control clickable"
               placeholder="Check-in Date"
-              onfocus="(this.type='date')"
             />
             <hr class="w-75" />
           </div>
-          <div>
+          <div class="form-group">
             <div class="d-flex">
               <img
                 src="./image/calendar.svg"
                 alt="calendar"
                 class="mb-3 pe-2 image-width img-fluid"
               />
-              <p class="text-color">
+              <label class="text-color">
                 Checkout<span class="text-danger">*</span>
-              </p>
+              </label>
             </div>
             <input
-              type="text"
-              class="border-0 bg-transparent"
+              type="date"
+              class="border-0 bg-transparent form-control"
+              id="check-out"
               placeholder="Check-out Date"
-              onfocus="(this.type='date')"
             />
             <hr class="w-75" />
           </div>
@@ -148,7 +138,7 @@
           />
           <p class="px-2">Adults</p>
         </div>
-        <select class="form-select border-0 pt-0">
+        <select class="form-select border-0 pt-0" id="select_box">
           <option value="">1</option>
           <option value="">2</option>
           <option value="">3</option>
@@ -163,15 +153,15 @@
           <p class="px-2">Children</p>
         </div>
 
-        <select class="form-select border-0 pt-0">
-          <option value="" class="">1</option>
+        <select class="form-select border-0 pt-0" id="select_box_children">
+          <option value="" >1</option>
           <option value="">2</option>
           <option value="">3</option>
         </select>
         <hr />
 
         <button
-          class="btn bg-color button border-2 border-white text-white mt-4 rounded-0 border-2 border-white"
+          class="btn submit-button bg-color border-2 border-white text-white mt-4 rounded-0 border-2 border-white"
         >
           Check Availability
         </button>
@@ -209,7 +199,7 @@
       <div class="p-5 text-white col-lg-6">
         <p class="text-warning swiper-sub-heading"></p>
         <h5 class="swiper-heading"></h5>
-        <p>From: <span class="fw-bold fs-4 swiper-rate">$150</span>/night</p>
+        <p>From: <span class="fw-bold fs-4 swiper-rate"></span>/night</p>
         <p class="swiper-description"></p>
         <div class="d-flex">
           <ul class="list-unstyled">
@@ -219,10 +209,10 @@
             <li class="me-5 fw-bold">View:</li>
           </ul>
           <ul class="list-unstyled">
-            <li class="ms-lg-5 swiper-bed">Queen Size Bed</li>
-            <li class="ms-lg-5 swiper-capacity">2 adults, 1 children</li>
-            <li class="ms-lg-5 swiper-room-size">55 sqm</li>
-            <li class="ms-lg-5 swiper-view">garden view</li>
+            <li class="ms-lg-5 swiper-bed"></li>
+            <li class="ms-lg-5 swiper-capacity"></li>
+            <li class="ms-lg-5 swiper-room-size"></li>
+            <li class="ms-lg-5 swiper-view"></li>
           </ul>
         </div>
         <button
@@ -232,7 +222,7 @@
         </button>
       </div>
 
-      <div class="mySwiper swiper p-0 m-0 col-lg-6 h-100">
+      <div class="mySwiper swiper col-lg-6">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img alt="hotel" class="w-100 h-100 swiper-image" />
@@ -322,7 +312,11 @@
             tincidunt gravida, eros nulla dapibus lacus, ut dapibus diam dui vel
             tortor.
           </p>
-          <a href="#" class="nav-link">Explore More →</a>
+          <button
+            class="nav-link top-section-hover w-25 p-2 bg-transparent border-white rounded-0 m-auto m-md-0"
+          >
+            Explore More →
+          </button>
         </div>
         <div class="col-lg-6 p-0 m-0">
           <img src="./image/hotel2.png" alt="hotel" class="w-100" />
@@ -369,11 +363,11 @@
           </h3>
         </div>
       </div>
-      <div class="row d-flex flex-lg-row flex-column px-3">
+      <div class="row d-flex flex-lg-row flex-column ms-5">
         <div class="col-lg-3 text-center text-lg-start">
           <img
             alt="services"
-            class="w-100 mb-3 image-height services-image img-fluid"
+            class="mb-3 image-height services-image img-fluid h-50"
           />
           <p class="services-sub-heading"></p>
           <h4 class="services-heading"></h4>
@@ -385,7 +379,7 @@
         <div class="col-lg-3 text-center text-lg-start">
           <img
             alt="services"
-            class="w-100 mb-3 image-height services-image img-fluid"
+            class="mb-3 image-height services-image img-fluid h-50"
           />
           <p class="services-sub-heading"></p>
           <h4 class="services-heading"></h4>
@@ -397,7 +391,7 @@
         <div class="col-lg-3 text-center text-lg-start">
           <img
             alt="services"
-            class="w-100 mb-3 image-height services-image img-fluid"
+            class="mb-3 image-height services-image img-fluid h-50"
           />
           <p class="services-sub-heading"></p>
           <h4 class="services-heading"></h4>
@@ -409,7 +403,7 @@
         <div class="col-lg-3 text-center text-lg-start">
           <img
             alt="services"
-            class="w-100 mb-3 image-height services-image img-fluid"
+            class="mb-3 image-height services-image img-fluid h-50"
           />
           <p class="services-sub-heading"></p>
           <h4 class="services-heading"></h4>
@@ -420,9 +414,13 @@
         </div>
       </div>
 
-      <button class="col-lg-2 offset-lg-5 bg-white offset-3 white-button">
-        View all Services
-      </button>
+      <div
+        class="d-flex align-items-center justify-content-center mt-3 mt-md-0"
+      >
+        <button class="bg-white white-button p-2 px-4">
+          View all Services
+        </button>
+      </div>
     </section>
     <!-- hotel-services-section end -->
 
@@ -624,31 +622,33 @@
 
     <!-- hotel-extra-features-section start -->
     <section class="container-fluid mt-5">
-      <div class="row pb-5 bg-color-wheat">
-        <div class="col-lg-4 m-0 p-0">
-          <img
-            src="./image/join-us/with-nature-3.jpg"
-            alt="hotel"
-            class="w-100 bigger-card-height spacing-above"
-          />
-        </div>
-        <div class="col-lg-3">
-          <img
-            src="./image/join-us/with-nature-1.jpg"
-            alt="hotel"
-            class="w-100 mb-3 card-height spacing-above"
-          />
-          <img
-            src="./image/join-us/with-nature-2.jpg"
-            alt="hotel"
-            class="w-100 card-height"
-          />
+      <div class="row pb-3 bg-color-wheat d-flex align-items-center">
+        <div class="d-flex row col-lg-7">
+          <div class="col-8 m-0 p-0">
+            <img
+              src="./image/join-us/with-nature-3.jpg"
+              alt="hotel"
+              class="w-100 h-100 spacing-above img-fluid"
+            />
+          </div>
+          <div class="col-4">
+            <img
+              src="./image/join-us/with-nature-1.jpg"
+              alt="hotel"
+              class="w-100 h-50 spacing-above img-fluid pb-2"
+            />
+            <img
+              src="./image/join-us/with-nature-2.jpg"
+              alt="hotel"
+              class="w-100 h-50 img-fluid pt-1"
+            />
+          </div>
         </div>
         <div
-          class="col-lg-3 offset-lg-1 d-flex flex-column align-items-center justify-content-center mt-lg-0 mt-5"
+          class="col-lg-3 d-flex flex-column align-items-center justify-content-center m-auto"
         >
           <p>SPA & WELLNESS</p>
-          <h4>Side by Side with Nature</h4>
+          <h4 class="text-center text-md-start">Side by Side with Nature</h4>
           <p class="text-center">
             Find harmony and balance from the inside and outside in. Laborum
             accusantium libero commodi id officiis itaque esse adipisci,
@@ -838,7 +838,7 @@
                   >Need Live Support?</a
                 >
               </p>
-              <p class="fw-semibold">reservation@mikalto.com</p>
+              <p class="fw-md-semibold fw-light">reservation@mikalto.com</p>
             </div>
           </div>
         </div>

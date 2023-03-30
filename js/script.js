@@ -1,3 +1,25 @@
+const swiperImg = document.querySelectorAll(".swiper-slide");
+const swiperPrev = document.querySelector(".swiper-button-prev");
+const swiperNext = document.querySelector(".swiper-button-next");
+const checkIn = document.getElementById("check-in");
+const checkOut = document.getElementById("check-out");
+const children = document.querySelector(".children");
+const submitButton = document.querySelector(".submit-button");
+const dropdownList = document.querySelector("#select_box");
+const dropdownListChild = document.querySelector("#select_box_children");
+
+submitButton.addEventListener("click", (e) => {
+  e.preventDefault();
+  console.log(checkIn.value);
+  console.log(checkOut.value);
+  let selecetedIndex = dropdownList.selectedIndex;
+  let selectedOption = dropdownList.options[selecetedIndex];
+  console.log("Adult : " + selectedOption.text);
+  let selecetedIndexChild = dropdownListChild.selectedIndex;
+  let selectedOptionChild = dropdownListChild.options[selecetedIndexChild];
+  console.log("Children : " + selectedOptionChild.text);
+});
+
 var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
@@ -56,7 +78,6 @@ async function swipperData() {
       return data.json();
     }
   );
-  console.log(swipperRes);
 
   for (let i = 0; i < swipperRes.length; i++) {
     console.log(swipperRes.length);
@@ -64,24 +85,68 @@ async function swipperData() {
     document
       .querySelectorAll(".swiper-image")
       [i].setAttribute("src", `${swipperRes[i].imageURL}`);
+    document.querySelector(
+      ".swiper-heading"
+    ).textContent = `${swipperRes[0].heading}`;
 
-    // document.querySelector(
-    //   ".swiper-heading"
-    // ).textContent = `${swipperRes[i].heading}`;
-
-    // if (i=0){
-    //     document.querySelector(
-    //   ".swiper-heading"
-    // ).textContent = `${swipperRes[i].heading}`;
-    // }
+    document.querySelector(
+      ".swiper-sub-heading"
+    ).textContent = `${swipperRes[0].subHeading}`;
+    document.querySelector(
+      ".swiper-description"
+    ).textContent = `${swipperRes[0].description}`;
+    document.querySelector(
+      ".swiper-rate"
+    ).textContent = `${swipperRes[0].rate}`;
+    document.querySelector(".swiper-bed").textContent = `${swipperRes[0].bed}`;
+    document.querySelector(
+      ".swiper-capacity"
+    ).textContent = `${swipperRes[0].capacity}`;
+    document.querySelector(
+      ".swiper-room-size"
+    ).textContent = `${swipperRes[0].roomSize}`;
+    document.querySelector(
+      ".swiper-view"
+    ).textContent = `${swipperRes[0].view}`;
+  }
+  function onClickChange() {
+    for (let i = 0; i < swiperImg.length; i++) {
+      if (swiperImg[i].classList.contains("swiper-slide-active")) {
+        document.querySelector(
+          ".swiper-heading"
+        ).textContent = `${swipperRes[i].heading}`;
+        document.querySelector(
+          ".swiper-sub-heading"
+        ).textContent = `${swipperRes[i].subHeading}`;
+        document.querySelector(
+          ".swiper-description"
+        ).textContent = `${swipperRes[i].description}`;
+        document.querySelector(
+          ".swiper-rate"
+        ).textContent = `${swipperRes[i].rate}`;
+        document.querySelector(
+          ".swiper-bed"
+        ).textContent = `${swipperRes[i].bed}`;
+        document.querySelector(
+          ".swiper-capacity"
+        ).textContent = `${swipperRes[i].capacity}`;
+        document.querySelector(
+          ".swiper-room-size"
+        ).textContent = `${swipperRes[i].roomSize}`;
+        document.querySelector(
+          ".swiper-view"
+        ).textContent = `${swipperRes[i].view}`;
+      }
+    }
   }
 
-  //   document.querySelector(
-  //     ".swiper-sub-heading"
-  //   ).textContent = `${swipperRes[0].subHeading}`;
-  //   document.querySelector(
-  //     ".swiper-description"
-  //   ).textContent = `${swipperRes[0].description}`;
+  swiperPrev.addEventListener("click", () => {
+    onClickChange();
+  });
+
+  swiperNext.addEventListener("click", () => {
+    onClickChange();
+  });
 }
 
 swipperData();
